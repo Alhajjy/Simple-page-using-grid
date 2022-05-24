@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+  caret-color: green;
+  }
+  ul li {
+    display: inline;
+    color: mediumvioletred;
+    display: inline-block;
+    cursor: pointer;
+  }
+ul li:hover {color: white;}
+.o {word-spacing: 3px;}
+.a {word-spacing: 3px;}
+.log {word-spacing: 10px;font-size: 2em;cursor: pointer;}
+.log:hover{background-color: green;color: white;}
+.page {
+  display: grid;
+  height: 1000px;
+  background-color: #988ed1;
+  grid-template-rows: 5% 80% 15%;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+                       "Content Content Content Content Content Content Content Content  aside aside"
+                       "foot foot foot foot foot foot foot foot foot foot";
+  word-spacing: 100px;
+  gap: 3px;
+}
+h2 {
+  grid-area: logo;
+  background-color: red;
+}
+.pg {
+  grid-area: nav;
+  background-color: black;
+  align-items: center;
+}
+section {
+  grid-area: Content;
+  background-color: blue;
+}
+aside {
+  grid-area: aside;
+  background-color: yellow;
+  color: black;
+}
+footer {
+  grid-area: foot;
+  background-color: black;
+}
+.log {
+  color: inherit;
+  background-color: red;
+  border-radius: 10px;
+}
+  /*
+.pg {
+  display: grid;
+  grid-template-columns: 60px repeat(3, auto);
+  grid-template-rows: 25% 25% 25% 25%;
+  background-color: red;
+  color: white;
+  width: 70%;
+  height: 400px;
+  text-align: center;
+}
+.a2 {
+  background-color: black;
+  align-items: center;
+}*/
